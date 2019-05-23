@@ -22,7 +22,6 @@ function deepestChild() {
   let divs = document
   .getElementById("grand-node")
   .querySelectorAll("div");
-  debugger;
   let next = [];
   let length = 0;
   while(length !== 1) {
@@ -32,5 +31,5 @@ function deepestChild() {
 	  }
 	  divs = next.shift();
   }
-  return divs
+return divs;
 }
